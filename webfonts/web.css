@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.nav {
+    padding: 0 20px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.bar {
+    max-width: 1300px;
+    height: 137px;
+    background-color: #fff;
+    border-radius: 37px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-right: 268px;
+    margin: 0 auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 1280px) {
+    .bar {
+        max-width: 1200px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .bar {
+        max-width: 980px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 767px) {
+    .bar {
+        max-width: 362px;
+        height: 100px;
+    }
+    .nav {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 390px) {
+    .bar {
+        max-width: 340px;
+        height: 100px;
+    }
+}
+
+.bar .arabic, .bar .english {
+    width: 148px;
+    height: 35px;
+    background-color: #e0e0e0;
+    border-radius: 187px;
+    display: flex;
+    flex-direction: row;
+    padding-right: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.bar .arabic img, .bar .english img {
+    width: 38px;
+    height: 19px;
+    margin: 8px;
+}
+
+.bar .arabic h3, .bar .english h3 {
+    font-size: 13px;
+    font-weight: bold;
+    font-family: "IBM Plex Sans", serif;
+    text-align: center;
+    color: #333;
+}
+
+@media (max-width: 767px) {
+    .bar .arabic, .bar .english {
+        width: 90px;
+        position: absolute;
+        right: 70px;
+    }
+    .bar .arabic {
+        top: 20px;
+    }
+    .bar .english {
+        top: 60px;
+    }
+    .bar .arabic h3, .bar .english h3 {
+        font-size: 10px;
+    }
+    .bar .arabic img, .bar .english img {
+        width: 25px;
+    }
+}
+
+.bar .icon i {
+    position: absolute;
+    right: 920px;
+    top: 30px;
+    font-size: 43px;
+    text-align: center;
+    color: #333;
+}
+
+.link ul {
+    padding-top: 10px;
+    list-style: none;
+    text-align: center;
+    width: 197px;
+    height: 140px;
+    background-color: #e0e0e0;
+    position: absolute;
+    right: 921px;
+    top: 96px;
+    display: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.link hr {
+    color: black;
+}
+
+.link ul::before {
+    content: "";
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #e0e0e0 transparent;
+    position: absolute;
+    right: 5px;
+    top: -20px;
+}
+
+.link ul li:hover {
+    padding-left: 25px;
+    background-color: #d0d0d0;
+}
+
+.link ul li {
+    transition: 0.3s;
+}
+
+.link:hover ul {
+    display: block;
+}
+
+@media (max-width: 767px) {
+    .nav .bar .icon i {
+        right: 279px;
+    }
+}
+
+.text {
+    width: 423px;
+    height: 127px;
+    text-align: center;
+    color: #333;
+}
+
+.g {
+    width: 294px;
+    height: 72px;
+    position: absolute;
+    top: 188px;
+    right: 341px;
+}
+
+.text h1 {
+    position: absolute;
+    right: 341px;
+    top: 109px;
+    text-align: center;
+    align-items: center;
+    color: #333;
+}
+
+.card {
+    width: 263px;
+    height: 350px;
+    background-color: #fff;
+    border-radius: 23px;
+    margin-top: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.f {
+    padding: 0 60px 0 101px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    justify-content: space-between;
+}
+
+.card img {
+    width: 100%;
+    height: 162px;
+    border-radius: 23px 23px 0 0;
+    text-align: center;
+}
+
+.card h3 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 5px;
+    color: #333;
+}
+
+.card p {
+    color: red;
+    font-size: 24px;
+    padding: 0 5px;
+    font-weight: bold;
+}
+
+@media (max-width: 767px) {
+    .text h1 {
+        font-size: 26px;
+        right: 131px;
+    }
+    .f .g {
+        width: 130px;
+        height: 72px;
+        right: 192px;
+    }
+}
+
+.time {
+    background-color: #e0e0e0;
+    width: 100%;
+    height: 170px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.time h2 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 50px;
+    padding-top: 15px;
+    color: #333;
+}
+
+.time p {
+    text-align: center;
+    font-size: 30px;
+    color: #333;
+}
+
+@media (max-width: 767px) {
+    .time {
+        height: auto;
+        padding: 20px 0;
+    }
+    .time h2 {
+        font-size: 32px;
+        padding-top: 10px;
+    }
+    .time p {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+}
+
+.gift {
+    width: 100%;
+    height: auto;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.gift h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 60px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.gift img {
+    width: 100%;
+    max-width: 516px;
+    height: auto;
+    position: static;
+    margin-bottom: 30px;
+}
+
+.gift p {
+    position: static;
+    font-weight: 500;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.gift button {
+    font-weight: 300;
+    font-size: 30px;
+    background-color: #4CAF50;
+    border-radius: 50px;
+    width: 200px;
+    height: 50px;
+    border: none;
+    position: static;
+    cursor: pointer;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.gift button:hover {
+    background-color: #45a049;
+}
+
+.gift button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+@media (max-width: 767px) {
+    .gift h2 {
+        font-size: 36px;
+    }
+    .gift p {
+        font-size: 28px;
+        padding: 0 20px;
+    }
+    .gift button {
+        font-size: 24px;
+        width: 180px;
+        height: 45px;
+    }
+}
+
+.gift button {
+    margin-bottom: 15px;
+}
